@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+
+import style from './faq.module.css';
 
 export default function FAQ({id,title,desc}) {
   return (
-    <article>
+    <article className={style.faq}>
         
         <div>
 
