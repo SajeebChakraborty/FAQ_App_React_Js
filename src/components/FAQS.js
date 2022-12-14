@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import {faqsdata} from './data.js';
+import FAQ from './FAQ';
 
 export default function FAQs() {
 
@@ -9,7 +10,14 @@ export default function FAQs() {
   return (
     <div>
       
-        {faqs.map(faq=> {})}
+        {faqs.map((faq)=> (
+
+            <FAQ key={faq.id} faq={...faq}/>
+
+            
+
+
+        ))}
 
     </div>
   )
