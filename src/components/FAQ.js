@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import style from './faq.module.css';
 
 export default function FAQ({id,title,desc}) {
+
+  const [toggle,setToggle]=useState(false);
+
   return (
     <article className={style.faq}>
         
@@ -14,7 +17,8 @@ export default function FAQ({id,title,desc}) {
 
         </div>
 
-        <p>{desc}</p>
+        { toggle && <p>{desc}</p> }
+        
 
 
     </article>
