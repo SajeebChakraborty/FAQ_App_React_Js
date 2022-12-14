@@ -6,13 +6,26 @@ export default function FAQ({id,title,desc}) {
 
   const [toggle,setToggle]=useState(false);
 
+  const onHandlestate=()=>{
+
+    setToggle(!toggle);
+    
+
+
+  }
+
   return (
     <article className={style.faq}>
         
         <div>
 
             <h4>{title}</h4>
-            <button>+</button>
+
+            <button onClick={onHandlestate}>
+                
+                { toggle ? '-' : '+' }
+                
+            </button>
 
 
         </div>
