@@ -1,12 +1,20 @@
 import React from 'react'
 
-export default function FAQ() {
+export default function FAQ({id,title,desc}) {
   return (
-    <div>
+    <article>
         
-        
+        <div>
+
+            <h4>{title}</h4>
+            <button>+</button>
 
 
-    </div>
+        </div>
+
+        <p>{desc}</p>
+
+
+    </article>
   )
 }

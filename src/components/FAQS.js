@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 
-import {faqsdata} from './data.js';
+import {data} from './data.js';
 import FAQ from './FAQ';
 
-export default function FAQs() {
+export default function FAQS() {
 
-  const [faqs,setFaqs]=useState(faqsdata);
+  const [faqs,setFaqs]=useState(data);
 
   return (
     <div>
       
         {faqs.map((faq)=> (
 
-            <FAQ key={faq.id} faq={...faq}/>
+            <FAQ key={faq.id} {...faq}/>
 
             
 

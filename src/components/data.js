@@ -1,4 +1,4 @@
-export const faqsData = [
+export const data = [
 
     {
 
